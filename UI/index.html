@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cache Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Cache Simulator</h1>
+    <label for="policy">Select Policy:</label>
+    <select id="policy">
+      <option value="LRU">LRU</option>
+      <option value="LFU">LFU</option>
+    </select>
+
+    <label for="capacity">Enter Capacity:</label>
+    <input type="number" id="capacity" min="1" placeholder="e.g. 3" title="Enter cache capacity" />
+
+    <button type="button" onclick="initializeCache()">Initialize Cache</button>
+
+    <div class="row">
+      <div>
+        <label>Key:</label>
+        <input type="number" id="keyInput" placeholder="e.g. 1" title="Enter key" />
+      </div>
+      <div>
+        <label>Value:</label>
+        <input type="number" id="valueInput" placeholder="e.g. 100" title="Enter value" />
+      </div>
+    </div>
+
+    <button type="button"put()">Put</button>
+    <button type="button"get()">Get</button>
+    <button type="button"display()">Display</button>
+
+    <div class="output" id="output">Output will be shown here...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
